@@ -1,6 +1,5 @@
 module.exports = ({ env }) => ({
-  host: `${process.env.APP_HOST}`,
-  port: env.int('PORT', 1337),
+  url:env("RENDER_EXTERNAL_URL"),
   app: {
     keys: env.array('APP_KEYS'),
   },
